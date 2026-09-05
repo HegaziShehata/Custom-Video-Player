@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d2230;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainwrapper {
+    width: 85%;
+    margin: 20px auto;
+    background-color: #2b3245;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#mainheader {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#mainheader h1 {
+    font-size: 35px;
+}
+
+#videowrapper {
+    text-align: center;
+    overflow: hidden;
+}
+
+#myvideo {
+    height: 500px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+#controlwrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#controlwrapper input[type=button] {
+    padding: 12px 18px;
+    margin: 5px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#controlwrapper input[type=button]:hover {
+    background-color: #0d47a1;
+}
+
+#volumewrapper,
+#seekwrapper,
+#sizewrapper {
+    margin-top: 25px;
+}
+
+#volumewrapper label,
+#seekwrapper label {
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#volume,
+#seekbar {
+    width: 100%;
+    cursor: pointer;
+}
+
+#sizewrapper {
+    text-align: center;
+}
+
+#sizewrapper input[type=button] {
+    width: 120px;
+    padding: 12px;
+    margin: 5px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sizewrapper input[type=button]:hover {
+    background-color: #0d47a1;
+}
+
+#mainfooter {
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+}
+
+#currenttime {
+    float: left;
+}
+
+#duration {
+    float: right;
+}

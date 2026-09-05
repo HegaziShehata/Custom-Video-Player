@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Video Player</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <section id="mainwrapper">
+
+            <header id="mainheader">
+
+                <h1>Modern Video Player</h1>
+
+            </header>
+
+            <section id="videowrapper">
+
+                <video id="myvideo" preload="metadata">
+
+                    <source src="universe.mp4" type="video/mp4">
+
+                    Your Browser Doesn't Support Video.
+
+                </video>
+
+            </section>
+
+            <section id="controlwrapper">
+
+                <input type="button" value="Play" onclick="playfun();">
+
+                <input type="button" value="Pause" onclick="pausefun();">
+
+                <input type="button" value="Stop" onclick="stopfun();">
+
+                <input type="button" value="Mute" onclick="mutefun();">
+
+                <input type="button" value="Loop" onclick="loopfun();">
+
+                <input type="button" value="Full Screen"
+                    onclick="fullscreenfun();">
+
+                <input type="button" value="0.5x" onclick="speedfun(0.5);">
+
+                <input type="button" value="1x" onclick="speedfun(1);">
+
+                <input type="button" value="2x" onclick="speedfun(2);">
+
+                <input type="button" value=">>" onclick="forwardfun();">
+
+                <input type="button" value="<<" onclick="backwardfun();">
+
+            </section>
+
+            <section id="volumewrapper">
+
+                <label>Volume</label>
+
+                <input type="range" id="volume" min="0" max="1" step="0.1"
+                    value="1" onchange="changevolumefun(event);">
+
+            </section>
+
+            <section id="seekwrapper">
+
+                <label>Progress</label>
+
+                <input type="range" id="seekbar" min="0" max="100" value="0"
+                    onchange="changeseekbarfun(event);">
+
+            </section>
+
+            <section id="sizewrapper">
+
+                <input type="button" value="Small"
+                    onclick="changesizefun('small');">
+
+                <input type="button" value="Medium"
+                    onclick="changesizefun('medium');">
+
+                <input type="button" value="Large"
+                    onclick="changesizefun('large');">
+
+            </section>
+
+            <footer id="mainfooter">
+
+                <span id="currenttime">
+                    00:00
+                </span>
+
+                <span id="duration">
+                    00:00
+                </span>
+
+            </footer>
+
+        </section>
+        <script src="script.js"></script>
+    </body>
+
+</html>
